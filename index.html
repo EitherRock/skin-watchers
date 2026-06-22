@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skin Watchers</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div id="chat-container">
+            <div id="chat-header">
+                <span class="live-dot"></span> LIVE CHAT
+            </div>
+
+            <div id="chat"></div>
+        </div>
+
+        <script>
+        const chat = document.getElementById("chat");
+        const MAX_MESSAGES = 5
+
+        const fakeMessages = [
+            ["GhostHunter42", "Did anyone hear that?"],
+            ["NightOwl", "Something moved behind you"],
+            ["SarahB", "Nope. I'm out."],
+            ["CryptidFan", "This is why I stay home."],
+            ["SpookyGuy", "CHECK THE HALLWAY"],
+            ["ModBot", "Please remain respectful in chat."],
+            ["Viewer92", "This feels staged."],
+            ["HauntedTV", "Turn around."],
+            ["Watcher", "TURN AROUND"],
+            ["GhostHunter42", "Seriously look behind you"]
+        ];
+
+        const colors = [
+            "#ff6b6b",
+            "#4ecdc4",
+            "#ffe66d",
+            "#a29bfe",
+            "#74b9ff",
+            "#55efc4",
+            "#fd79a8"
+        ];
+
+        function addMessage(user, text) {
+            const div = document.createElement("div");
+            div.className = "message";
+
+            const color = colors[Math.floor(Math.random() * colors.length)];
+
+            div.innerHTML =
+                `<span class="username" style="color:${color}">${user}</span>: ${text}`;
+
+            chat.appendChild(div);
+
+            while (chat.children.length > MAX_MESSAGES) {
+                chat.removeChild(chat.firstChild);
+            }
+        }
+
+        let index = 0;
+
+        setInterval(() => {
+            const [user, text] = fakeMessages[index % fakeMessages.length];
+            addMessage(user, text);
+            index++;
+        }, 3000);
+        </script>
+
+    </body>
+</html>
