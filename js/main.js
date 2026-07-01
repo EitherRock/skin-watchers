@@ -30,7 +30,7 @@ function addMessage() {
 
     chat.appendChild(div);
 
-    if (chat.children.length > 10) {
+    if (chat.children.length > 8) {
         chat.removeChild(chat.firstChild);
     }
 }
