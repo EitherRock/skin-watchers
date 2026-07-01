@@ -1,22 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Skin Watchers</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIVE PLATFORM</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
+<body>
 
-        <div id="chat-container">
-            <div id="chat-header">
-                <span class="live-dot"></span> LIVE CHAT
-            </div>
+<div id="layout">
 
+    <!-- LEFT: ADS / RELATED STREAMS -->
+    <div id="left-panel">
+
+        <div class="panel-title">RELATED STREAMS AND ADS</div>
+
+        <div class="ad">🔴 Abandoned House Cam</div>
+        <div class="ad">🔴 Basement Feed #2</div>
+        <div class="ad">🔴 Night Vision Corridor</div>
+        <div class="ad">🔴 Static Channel 11</div>
+
+    </div>
+
+    <!-- CENTER: MAIN VIDEO -->
+    <div id="center-panel">
+
+        <div id="main-video-wrapper">
+            <video id="main-video" autoplay muted loop playsinline>
+                <source src="videos/room0.mp4">
+            </video>
+
+            <div id="live-badge">🔴 LIVE</div>
+            <div>Ethan</div>
+        </div>
+
+        <!-- THUMBNAILS -->
+        <div id="thumb-grid">
+            <video class="thumb" data-src="videos/room0.mp4" muted></video>
+            <video class="thumb" data-src="videos/room1.mp4" muted></video>
+            <video class="thumb" data-src="videos/room2.mp4" muted></video>
+            <video class="thumb" data-src="videos/room3.mp4" muted></video>
+            <video class="thumb" data-src="videos/room4.mp4" muted></video>
+            <video class="thumb" data-src="videos/room5.mp4" muted></video>
+            <video class="thumb" data-src="videos/room6.mp4" muted></video>
+            <video class="thumb" data-src="videos/room7.mp4" muted></video>
+            <video class="thumb" data-src="videos/room8.mp4" muted></video>
+            
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT: CHAT -->
+    <div id="right-panel">
+
+        <div id="chat-header">
+            LIVE CHAT
+        </div>
+
+        <div id="chat-wrapper">
             <div id="chat"></div>
         </div>
 
-        <script src="js/scripts.js"></script>
-    </body>
+        <div id="chat-input">
+            <input id="chat-text" type="text" placeholder="Type a message..." />
+            <button id="send-btn">Send</button>
+        </div>
+
+        <div id="side-image">
+            <img src="images/smile.png" alt="film poster">
+        </div>
+    </div>
+
+
+    
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
 </html>
