@@ -4,6 +4,14 @@ const thumbs = document.querySelectorAll(".thumb");
 const input = document.getElementById("chat-text");
 const sendBtn = document.getElementById("send-btn");
 
+let offlineMode = false;
+
+function toggleOffline() {
+    offlineMode = !offlineMode;
+
+    document.body.classList.toggle("offline", offlineMode);
+}
+
 const messages = [
     ["Viewer1", "this stream feels wrong"],
     ["Alex", "why are there multiple feeds??"],
@@ -105,5 +113,11 @@ sendBtn.addEventListener("click", () => {
 input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         sendBtn.click();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "o") {
+        toggleOffline();
     }
 });
