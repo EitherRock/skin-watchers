@@ -110,6 +110,8 @@ body {
     transition: 0.2s;
 
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+
+    z-index: 1;
 }
 
 .thumb:hover {
@@ -208,4 +210,31 @@ body {
     border: 1px solid rgba(255,255,255,0.12);
     opacity: 0.85;
     box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.video-container,
+#main-video-wrapper {
+    position: relative;
+}
+
+.offline-overlay,
+#main-offline-overlay {
+    position: absolute;
+    inset: 0;
+    background: black;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+
+.offline .offline-overlay,
+.offline #main-offline-overlay {
+    display: flex;
 }
