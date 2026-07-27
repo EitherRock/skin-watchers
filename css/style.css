@@ -21,6 +21,7 @@ body {
     background: rgba(10,10,10,0.9);
     border-right: 1px solid rgba(255,255,255,0.08);
     padding: 10px;
+    padding-bottom: 25px;
 }
 
 .panel-title {
@@ -243,7 +244,7 @@ body {
     width: 100%;
     aspect-ratio: 9 / 16;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     background: #000;
 }
 

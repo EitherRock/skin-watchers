@@ -15,28 +15,28 @@ function toggleOffline() {
 }
 
 const messages = [
-    ["Viewer1", "this stream feels wrong"],
-    ["Alex", "why are there multiple feeds??"],
-    ["GhostCam", "switch to camera 3"],
-    ["user88", "I saw something move"],
-    ["Mod", "please stay calm"],
-    ["???", "he knows you're watching"],
-    ["C0nner", "Why is the skinwalker so hot?"],
-    ["Viewer23", "did anyone else hear that?"],
-    ["GhostPing", "camera 3 keeps lagging for me"],
-    ["Mira", "the hallway looks different now"],
-    ["Watcher01", "it feels like it's watching us back"],
-    ["Noah", "chat is acting weird on my end"],
-    ["Kira", "did the lighting just change?"],
-    ["MachoManRand", "OHHH YEAH"]
+    ["Viewer1", "this stream feels wrong", "#ff6666"],
+    ["Alex", "why are there multiple feeds??", "#66ccff"],
+    ["GhostCam", "switch to camera 3", "#b388ff"],
+    ["user88", "I saw something move", "#66dd99"],
+    ["Mod", "please stay calm", "#ffcc66"],
+    ["???", "he knows you're watching", "#ffffff"],
+    ["C0nner", "Why is the skinwalker so hot?", "#ff66cc"],
+    ["Viewer23", "did anyone else hear that?", "#ff9966"],
+    ["GhostPing", "camera 3 keeps lagging for me", "#66ffff"],
+    ["Mira", "the hallway looks different now", "#cc99ff"],
+    ["Watcher01", "it feels like it's watching us back", "#ff4444"],
+    ["Noah", "chat is acting weird on my end", "#99ccff"],
+    ["Kira", "did the lighting just change?", "#99ff99"],
+    ["MachoManRand", "OHHH YEAH", "#ffaa00"]
 ];
 
 function addMessage() {
-    const [user, text] = messages[Math.floor(Math.random() * messages.length)];
+    const [user, text, color] = messages[Math.floor(Math.random() * messages.length)];
 
     const div = document.createElement("div");
     div.className = "message";
-    div.innerHTML = `<b>${user}</b>: ${text}`;
+    div.innerHTML = `<b style="color:${color}">${user}</b>: ${text}`;
 
     chat.appendChild(div);
 
