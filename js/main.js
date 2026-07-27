@@ -31,12 +31,33 @@ const messages = [
     ["MachoManRand", "OHHH YEAH", "#ffaa00"]
 ];
 
+// function addMessage() {
+//     const [user, text, color] = messages[Math.floor(Math.random() * messages.length)];
+
+//     const div = document.createElement("div");
+//     div.className = "message";
+//     div.innerHTML = `<b style="color:${color}">${user}</b>: ${text}`;
+
+//     chat.appendChild(div);
+
+//     if (chat.children.length > 8) {
+//         chat.removeChild(chat.firstChild);
+//     }
+// }
+
 function addMessage() {
     const [user, text, color] = messages[Math.floor(Math.random() * messages.length)];
 
     const div = document.createElement("div");
     div.className = "message";
-    div.innerHTML = `<b style="color:${color}">${user}</b>: ${text}`;
+
+    const username = document.createElement("b");
+    username.className = "username";
+    username.textContent = user;
+    username.style.color = color;
+
+    div.appendChild(username);
+    div.appendChild(document.createTextNode(`: ${text}`));
 
     chat.appendChild(div);
 
