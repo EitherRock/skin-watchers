@@ -237,3 +237,29 @@ body {
 .offline #main-offline-overlay {
     display: flex;
 }
+
+#ad-carousel {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin-bottom: 15px;
+    background: #000;
+}
+
+.ad-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.ad-slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}

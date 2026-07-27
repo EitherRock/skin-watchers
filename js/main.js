@@ -3,8 +3,10 @@ const mainVideo = document.getElementById("main-video");
 const thumbs = document.querySelectorAll(".thumb");
 const input = document.getElementById("chat-text");
 const sendBtn = document.getElementById("send-btn");
+const adSlides = document.querySelectorAll(".ad-slide");
 
 let offlineMode = false;
+let currentAd = 0;
 
 function toggleOffline() {
     offlineMode = !offlineMode;
@@ -121,3 +123,22 @@ document.addEventListener("keydown", (e) => {
         toggleOffline();
     }
 });
+
+function rotateAds() {
+    // Remove active class from current image
+    adSlides[currentAd].classList.remove("active");
+
+    // Move to next image
+    currentAd++;
+
+    // Loop back to first image
+    if (currentAd >= adSlides.length) {
+        currentAd = 0;
+    }
+
+    // Show next image
+    adSlides[currentAd].classList.add("active");
+}
+
+// Change ad every 4 seconds
+setInterval(rotateAds, 5000);
