@@ -40,7 +40,7 @@ const messages = [
     ["Flames_of_Havoc", "it feels like it's watching us back", "#ff4444", true, 11],
     ["Asphix67", "chat is acting weird on my end", "#99ccff", true, 12],
     ["TheMisnomer", "did the lighting just change?", "#99ff99", true, 12],
-    ["MachoManRand", "OHHH YEAH", "#ffaa00", true, 12]
+    ["MachoManRand", "OHHH YEAHh", "#ffaa00", true, 12]
 ];
 
 
