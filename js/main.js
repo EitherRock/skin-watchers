@@ -41,7 +41,7 @@ const messages = [
     ["Flames_of_Havoc", "it feels like it's watching us back", "#ff4444", true, 11],
     
     ["TheMisnomer", "did the lighting just change?", "#99ff99", true, 12],
-    ["MachoManRand", "OHHH YEAHh", "#ffaa00", true, 12]
+    ["MachoManRand", "OHHH YEAHhh", "#ffaa00", true, 12]
 ];
 
 
