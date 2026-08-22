@@ -31,14 +31,15 @@ const preloadedMessages = [
 ];
 
 const messages = [
-    
-    
-    ["C0nner", "Why is the skinwalker so hot?", "#ff66cc", true, 9],
-    ["InkedupSquid10_4", "did anyone else hear that?", "#ff9966", true, 9],
+    ["Asphix67", "chat is acting weird on my end", "#99ccff", true, 12],
     ["SeductiveZeus", "camera 3 keeps lagging for me", "#66ffff", true, 10],
+    ["InkedupSquid10_4", "I'm so excited for this", "#ff9966", true, 9],
+    ["C0nner", "Why is the skinwalker so hot?", "#ff66cc", true, 9],
+    
+    
     ["X6skincrawler9X", "the hallway looks different now", "#cc99ff", true, 10],
     ["Flames_of_Havoc", "it feels like it's watching us back", "#ff4444", true, 11],
-    ["Asphix67", "chat is acting weird on my end", "#99ccff", true, 12],
+    
     ["TheMisnomer", "did the lighting just change?", "#99ff99", true, 12],
     ["MachoManRand", "OHHH YEAHh", "#ffaa00", true, 12]
 ];
