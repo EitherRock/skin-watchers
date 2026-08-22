@@ -21,7 +21,7 @@ body {
     background: rgba(10,10,10,0.9);
     border-right: 1px solid rgba(255,255,255,0.08);
     padding: 10px;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 
 .panel-title {
@@ -47,7 +47,7 @@ body {
     gap: 10px;
     padding: 10px;
     
-    overflow: hidden
+    overflow: hidden;
 }
 
 /* MAIN VIDEO */
@@ -173,7 +173,7 @@ body {
     border: none;
     border-radius: 4px;
     background: rgba(0,0,0,0.6);
-    /* color: white; */
+    color: white;
     outline: none;
 }
 

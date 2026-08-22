@@ -7,6 +7,8 @@ const adSlides = document.querySelectorAll(".ad-slide");
 
 let offlineMode = false;
 let currentAd = 0;
+let userIndex = 0;
+let chatLen = 12;
 
 function toggleOffline() {
     offlineMode = !offlineMode;
@@ -14,61 +16,82 @@ function toggleOffline() {
     document.body.classList.toggle("offline", offlineMode);
 }
 
-const messages = [
-    ["Viewer1", "this stream feels wrong", "#ff6666"],
-    ["Alex", "why are there multiple feeds??", "#66ccff"],
-    ["GhostCam", "switch to camera 3", "#b388ff"],
-    ["user88", "I saw something move", "#66dd99"],
-    ["Mod", "please stay calm", "#ffcc66"],
-    ["???", "he knows you're watching", "#ffffff"],
-    ["C0nner", "Why is the skinwalker so hot?", "#ff66cc"],
-    ["Viewer23", "did anyone else hear that?", "#ff9966"],
-    ["GhostPing", "camera 3 keeps lagging for me", "#66ffff"],
-    ["Mira", "the hallway looks different now", "#cc99ff"],
-    ["Watcher01", "it feels like it's watching us back", "#ff4444"],
-    ["Noah", "chat is acting weird on my end", "#99ccff"],
-    ["Kira", "did the lighting just change?", "#99ff99"],
-    ["MachoManRand", "OHHH YEAH", "#ffaa00"]
+const preloadedMessages = [
+    ["EchoInTheFire", "I'm telling you look it up. A group of jelly fish is called a smack", "#ff6666", true, 1],
+    ["Na10ism", "holy shit hes right", "#66ccff", true, 1],
+    ["ZurrVx", "I just got on, did I miss naythign?", "#66dd99", true, 1],
+    ["PhillyBombastic", "Im going to group of jelly fish your mom if you dont shut up", "#b388ff", true, 1],
+    ["ZurrVx", "Who tf is dez", "#66ccff", true, 1]
 ];
 
-// function addMessage() {
-//     const [user, text, color] = messages[Math.floor(Math.random() * messages.length)];
+const messages = [
+    ["EchoInTheFire", "this stream feels wrong", "#ff6666", true, 2],
+    ["Na10ism", "why are there multiple feeds??", "#66ccff", true, 3],
+    ["PhillyBombastic", "switch to camera 3", "#b388ff", true, 5],
+    ["ZurrVx", "I saw something move", "#66dd99", true, 6],
+    ["Heavens_death", "please stay calm", "#ffcc66", true, 6],
+    ["Psychoticillness", "he knows you're watching", "#ffffff", true, 8],
+    ["C0nner", "Why is the skinwalker so hot?", "#ff66cc", true, 9],
+    ["InkedupSquid10_4", "did anyone else hear that?", "#ff9966", true, 9],
+    ["SeductiveZeus", "camera 3 keeps lagging for me", "#66ffff", true, 10],
+    ["X6skincrawler9X", "the hallway looks different now", "#cc99ff", true, 10],
+    ["Flames_of_Havoc", "it feels like it's watching us back", "#ff4444", true, 11],
+    ["Asphix67", "chat is acting weird on my end", "#99ccff", true, 12],
+    ["TheMisnomer", "did the lighting just change?", "#99ff99", true, 12],
+    ["MachoManRand", "OHHH YEAH", "#ffaa00", true, 12]
+];
 
-//     const div = document.createElement("div");
-//     div.className = "message";
-//     div.innerHTML = `<b style="color:${color}">${user}</b>: ${text}`;
 
-//     chat.appendChild(div);
-
-//     if (chat.children.length > 8) {
-//         chat.removeChild(chat.firstChild);
-//     }
-// }
-
-function addMessage() {
-    const [user, text, color] = messages[Math.floor(Math.random() * messages.length)];
-
-    const div = document.createElement("div");
-    div.className = "message";
-
-    const username = document.createElement("b");
-    username.className = "username";
-    username.textContent = user;
-    username.style.color = color;
-
-    div.appendChild(username);
-    div.appendChild(document.createTextNode(`: ${text}`));
-
-    chat.appendChild(div);
-
-    if (chat.children.length > 8) {
-        chat.removeChild(chat.firstChild);
-    }
+for (let i = 0; i < preloadedMessages.length; i++) {
+    addMessage(preloadedMessages);
 }
 
-setInterval(addMessage, 2000);
+userIndex = 0;
 
-// const thumbs = document.querySelectorAll(".thumb");
+function addMessage(thread) {
+    const [user, text, color, active] = thread[userIndex];
+
+    if (active) {
+        const div = document.createElement("div");
+        div.className = "message";
+
+        const username = document.createElement("b");
+        username.className = "username";
+        username.textContent = user;
+        username.style.color = color;
+
+        div.appendChild(username);
+        div.appendChild(document.createTextNode(`: ${text}`));
+
+        chat.appendChild(div);
+
+        if (chat.children.length > chatLen) {
+            chat.removeChild(chat.firstChild);
+        }
+    }
+
+    userIndex += 1;
+    console.log(userIndex);
+}
+
+setInterval(() => addMessage(messages), 2000);
+
+
+// DONT DELETE LINES BELOW
+// mainVideo.addEventListener('timeupdate', () => {
+
+//     while(
+//         userIndex < messages.length && 
+//         mainVideo.currentTime >= messages[userIndex][4]
+        
+//     ) {
+//         console.log(mainVideo.currentTime);
+//         addMessage(messages)
+//     }
+
+// })
+
+
 
 thumbs.forEach(t => {
 
@@ -80,16 +103,6 @@ thumbs.forEach(t => {
     t.playsInline = true;
 
     t.play();
-
-    // t.addEventListener("click", () => {
-
-    //     thumbs.forEach(x => x.classList.remove("active"));
-    //     t.classList.add("active");
-
-    //     const src = t.getAttribute("data-src");
-    //     mainVideo.src = src;
-    //     mainVideo.play();
-    // });
 });
 
 thumbs.forEach(t => {
@@ -107,6 +120,8 @@ thumbs.forEach(t => {
 
         mainVideo.addEventListener("loadedmetadata", () => {
             mainVideo.currentTime = currentTime;
+            console.log("video duration");
+            console.log(mainVideo.duration);
             mainVideo.play();
         }, { once: true });
     });
