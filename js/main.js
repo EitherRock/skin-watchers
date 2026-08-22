@@ -31,9 +31,9 @@ const preloadedMessages = [
 ];
 
 const messages = [
+    ["InkedupSquid10_4", "I'm so excited for this", "#ff9966", true, 9],
     ["Asphix67", "chat is acting weird on my end", "#99ccff", true, 12],
     ["SeductiveZeus", "camera 3 keeps lagging for me", "#66ffff", true, 10],
-    ["InkedupSquid10_4", "I'm so excited for this", "#ff9966", true, 9],
     ["C0nner", "Why is the skinwalker so hot?", "#ff66cc", true, 9],
     
     
