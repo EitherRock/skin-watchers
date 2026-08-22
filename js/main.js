@@ -19,18 +19,20 @@ function toggleOffline() {
 const preloadedMessages = [
     ["EchoInTheFire", "I'm telling you look it up. A group of jelly fish is called a smack", "#ff6666", true, 1],
     ["Na10ism", "holy shit hes right", "#66ccff", true, 1],
-    ["ZurrVx", "I just got on, did I miss naythign?", "#66dd99", true, 1],
+    ["ZurrVx", "Who tf is dez", "#66dd99", true, 1],
     ["PhillyBombastic", "Im going to group of jelly fish your mom if you dont shut up", "#b388ff", true, 1],
-    ["ZurrVx", "Who tf is dez", "#66ccff", true, 1]
+    ["Psychoticillness", "Could anyone catch what they were talking about?", "#ffffff", true, 8],
+    ["EchoInTheFire", "oh no he found us", "#ff6666", true, 2],
+    ["Na10ism", "Do you think he'll find the other cameras too?", "#66ccff", true, 3],
+    ["PhillyBombastic", "NO NO NO DONT DO THAT", "#b388ff", true, 5],
+    ["ZurrVx", "I Cant see!", "#66dd99", true, 6],
+    ["Heavens_death", "Bets on if he'll find the others?", "#ffcc66", true, 6],
+    
 ];
 
 const messages = [
-    ["EchoInTheFire", "this stream feels wrong", "#ff6666", true, 2],
-    ["Na10ism", "why are there multiple feeds??", "#66ccff", true, 3],
-    ["PhillyBombastic", "switch to camera 3", "#b388ff", true, 5],
-    ["ZurrVx", "I saw something move", "#66dd99", true, 6],
-    ["Heavens_death", "please stay calm", "#ffcc66", true, 6],
-    ["Psychoticillness", "he knows you're watching", "#ffffff", true, 8],
+    
+    
     ["C0nner", "Why is the skinwalker so hot?", "#ff66cc", true, 9],
     ["InkedupSquid10_4", "did anyone else hear that?", "#ff9966", true, 9],
     ["SeductiveZeus", "camera 3 keeps lagging for me", "#66ffff", true, 10],
@@ -74,7 +76,7 @@ function addMessage(thread) {
     console.log(userIndex);
 }
 
-setInterval(() => addMessage(messages), 2000);
+setInterval(() => addMessage(messages), 1000);
 
 
 // DONT DELETE LINES BELOW
