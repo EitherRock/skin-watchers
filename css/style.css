@@ -153,6 +153,7 @@ body {
 
 #chat {
     padding: 10px;
+    padding-bottom: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
