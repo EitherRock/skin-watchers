@@ -27,11 +27,12 @@ const preloadedMessages = [
     ["EchoInTheFire", "just logged backed on", "#ff6666", true, 2],
     ["Na10ism", "the other cabin stream just ended", "#66ccff", true, 3],
     ["ZurrVx", "welcom eback", "#66dd99", true, 6],
-    ["Heavens_death", "you dint miss myuch", "#ffcc66", true, 6],
+    
     
 ];
 
 const messages = [
+    ["Heavens_death", "you dint miss myuch", "#ffcc66", true, 6],
     ["InkedupSquid10_4", "he needs more tats", "#ff9966", true, 9],
     ["EchoInTheFire", "he's going to bed already? ", "#ff6666", true, 1],
     ["chudbunny26", "watching ppl sleep is so booooring", "#66dd99", true, 1],
