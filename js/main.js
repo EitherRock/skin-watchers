@@ -17,31 +17,31 @@ function toggleOffline() {
 }
 
 const preloadedMessages = [
-    ["EchoInTheFire", "I'm telling you look it up. A group of jelly fish is called a smack", "#ff6666", true, 1],
-    ["Na10ism", "holy shit hes right", "#66ccff", true, 1],
-    ["ZurrVx", "Who tf is dez", "#66dd99", true, 1],
-    ["PhillyBombastic", "Im going to group of jelly fish your mom if you dont shut up", "#b388ff", true, 1],
-    ["Psychoticillness", "Could anyone catch what they were talking about?", "#ffffff", true, 8],
-    ["EchoInTheFire", "oh no he found us", "#ff6666", true, 2],
-    ["Na10ism", "Do you think he'll find the other cameras too?", "#66ccff", true, 3],
-    ["PhillyBombastic", "NO NO NO DONT DO THAT", "#b388ff", true, 5],
-    ["ZurrVx", "I Cant see!", "#66dd99", true, 6],
-    ["Heavens_death", "Bets on if he'll find the others?", "#ffcc66", true, 6],
+    ["TheMisnomer", "Anyone think he'll make it through the night??", "#99ff99", true, 12],
+    ["PhillyBombastic", "who else is watching cabin 2 feed?", "#b388ff", true, 5],
+    ["MachoManRand", "OHHH YEAHhh", "#ffaa00", true, 12],
+    ["Asphix67", "I heard its attracted to lights", "#99ccff", true, 12],
+    ["Na10ism", "Thers no wayy. This will be a short1", "#66ccff", true, 1],
+    ["Psychoticillness", "the phone site is such @$$", "#ffffff", true, 8],
+    ["PhillyBombastic", "is mothman attracted to light?", "#b388ff", true, 1],
+    ["EchoInTheFire", "just logged backed on", "#ff6666", true, 2],
+    ["Na10ism", "the other cabin stream just ended", "#66ccff", true, 3],
+    ["ZurrVx", "welcom eback", "#66dd99", true, 6],
+    ["Heavens_death", "you dint miss myuch", "#ffcc66", true, 6],
     
 ];
 
 const messages = [
-    ["InkedupSquid10_4", "I'm so excited for this", "#ff9966", true, 9],
-    ["Asphix67", "chat is acting weird on my end", "#99ccff", true, 12],
-    ["SeductiveZeus", "camera 3 keeps lagging for me", "#66ffff", true, 10],
-    ["C0nner", "Why is the skinwalker so hot?", "#ff66cc", true, 9],
-    
-    
-    ["X6skincrawler9X", "the hallway looks different now", "#cc99ff", true, 10],
-    ["Flames_of_Havoc", "it feels like it's watching us back", "#ff4444", true, 11],
-    
-    ["TheMisnomer", "did the lighting just change?", "#99ff99", true, 12],
-    ["MachoManRand", "OHHH YEAHhh", "#ffaa00", true, 12]
+    ["InkedupSquid10_4", "he needs more tats", "#ff9966", true, 9],
+    ["EchoInTheFire", "he's going to bed already? ", "#ff6666", true, 1],
+    ["chudbunny26", "watching ppl sleep is so booooring", "#66dd99", true, 1],
+    ["X6skincrawler9X", "wtf are those shorts", "#cc99ff", true, 10],
+    ["SeductiveZeus", "nooooo the feed froze :(", "#66ffff", true, 10],
+    ["C0nner", "did ashley survive?", "#ff66cc", true, 9],
+    ["Asphix67", "I also heard it can change its voice", "#99ccff", true, 12],
+    ["Na10ism", "nope", "#66ccff", true, 3],
+    ["C0nner", "good she waws a bitch", "#ff66cc", true, 9],
+    ["Flames_of_Havoc", "dude spoilers", "#ff4444", true, 11],
 ];
 
 
@@ -77,7 +77,7 @@ function addMessage(thread) {
     console.log(userIndex);
 }
 
-setInterval(() => addMessage(messages), 1000);
+setInterval(() => addMessage(messages), 2000);
 
 
 // DONT DELETE LINES BELOW
@@ -181,3 +181,33 @@ function rotateAds() {
 
 // Change ad every 4 seconds
 setInterval(rotateAds, 5000);
+
+
+
+
+
+// Taping camera chat
+// const preloadedMessages = [
+//     ["EchoInTheFire", "I'm telling you look it up. A group of jelly fish is called a smack", "#ff6666", true, 1],
+//     ["Na10ism", "holy shit hes right", "#66ccff", true, 1],
+//     ["ZurrVx", "Who tf is dez", "#66dd99", true, 1],
+//     ["PhillyBombastic", "Im going to group of jelly fish your mom if you dont shut up", "#b388ff", true, 1],
+//     ["Psychoticillness", "Could anyone catch what they were talking about?", "#ffffff", true, 8],
+//     ["EchoInTheFire", "oh no he found us", "#ff6666", true, 2],
+//     ["Na10ism", "Do you think he'll find the other cameras too?", "#66ccff", true, 3],
+//     ["PhillyBombastic", "NO NO NO DONT DO THAT", "#b388ff", true, 5],
+//     ["ZurrVx", "I Cant see!", "#66dd99", true, 6],
+//     ["Heavens_death", "Bets on if he'll find the others?", "#ffcc66", true, 6],
+    
+// ];
+
+// const messages = [
+//     ["InkedupSquid10_4", "I'm so excited for this", "#ff9966", true, 9],
+//     ["Asphix67", "chat is acting weird on my end", "#99ccff", true, 12],
+//     ["SeductiveZeus", "camera 3 keeps lagging for me", "#66ffff", true, 10],
+//     ["C0nner", "Why is the skinwalker so hot?", "#ff66cc", true, 9],
+//     ["X6skincrawler9X", "the hallway looks different now", "#cc99ff", true, 10],
+//     ["Flames_of_Havoc", "it feels like it's watching us back", "#ff4444", true, 11],
+//     ["TheMisnomer", "did the lighting just change?", "#99ff99", true, 12],
+//     ["MachoManRand", "OHHH YEAHhh", "#ffaa00", true, 12]
+// ];
