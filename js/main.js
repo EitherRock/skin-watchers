@@ -36,7 +36,7 @@ const messages = [
     ["InkedupSquid10_4", "he needs more tats", "#ff9966", true, 9],
     ["EchoInTheFire", "he's going to bed already? ", "#ff6666", true, 1],
     ["chudbunny26", "watching ppl sleep is so booooring", "#66dd99", true, 1],
-    ["X6skincrawler9X", "wtf are those shorts", "#cc99ff", true, 10],
+    ["X6skincrawler9X", "wtf are those shorts. i kind of want a pair", "#cc99ff", true, 10],
     ["SeductiveZeus", "nooooo the feed froze :(", "#66ffff", true, 10],
     ["C0nner", "did ashley survive?", "#ff66cc", true, 9],
     ["Asphix67", "I also heard it can change its voice", "#99ccff", true, 12],
