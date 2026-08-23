@@ -17,7 +17,7 @@ function toggleOffline() {
 }
 
 const preloadedMessages = [
-    ["TheMisnomer", "Anyone think he'll make it through the night??", "#99ff99", true, 12],
+    ["TheMisnomer", "think he'll make it through the night??", "#99ff99", true, 12],
     ["PhillyBombastic", "who else is watching cabin 2 feed?", "#b388ff", true, 5],
     ["MachoManRand", "OHHH YEAHhh", "#ffaa00", true, 12],
     ["Asphix67", "I heard its attracted to lights", "#99ccff", true, 12],
