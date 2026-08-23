@@ -43,6 +43,7 @@ const messages = [
     ["Na10ism", "nope", "#66ccff", true, 3],
     ["C0nner", "good she waws a bitch", "#ff66cc", true, 9],
     ["Flames_of_Havoc", "dude spoilers", "#ff4444", true, 11],
+    [" ", " ", "#ff4444", true, 11],
 ];
 
 
