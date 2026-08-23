@@ -17,11 +17,11 @@ function toggleOffline() {
 }
 
 const preloadedMessages = [
-    ["TheMisnomer", "think he'll make it through the night??", "#99ff99", true, 12],
+    ["TheMisnomer", "Anyone think he'll make it through the night??", "#99ff99", true, 12],
     ["PhillyBombastic", "who else is watching cabin 2 feed?", "#b388ff", true, 5],
     ["MachoManRand", "OHHH YEAHhh", "#ffaa00", true, 12],
     ["Asphix67", "I heard its attracted to lights", "#99ccff", true, 12],
-    ["Na10ism", "Thers no wayy. This will be a short1", "#66ccff", true, 1],
+    ["Na10ism", "Thers no wayy. This will be a short1 im calling it now", "#66ccff", true, 1],
     ["Psychoticillness", "the phone site is such @$$", "#ffffff", true, 8],
     ["PhillyBombastic", "is mothman attracted to light?", "#b388ff", true, 1],
     ["EchoInTheFire", "just logged backed on", "#ff6666", true, 2],
